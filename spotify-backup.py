@@ -41,7 +41,7 @@ class SpotifyAPI:
 				return json.load(reader(res))
 			except Exception as err:
 				logging.info('Couldn\'t load URL: {} ({})'.format(url, err))
-				time.sleep(2)
+				time.sleep(1)
 				logging.info('Trying again...')
 		sys.exit(1)
 	
